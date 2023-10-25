@@ -1,20 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace OOP_Polymorphism
+﻿namespace OOP_Polymorphism
 {
-    public class Parallellogram:Geometry
+    public class Parallellogram : Geometry
     {
         protected double SideA { get; set; }
         protected double SideB { get; set; }
         public Parallellogram()
         {
-            SideA = 5;
-            SideB = 4;
-            Shape = "Parallellogram";
+            SideA = 6.55;
+            SideB = 3.1;
+            ShapeName = "Parallellogram";
         }
         public override double Area()
         {

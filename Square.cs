@@ -1,23 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace OOP_Polymorphism
+﻿namespace OOP_Polymorphism
 {
-    public class Square:Geometry
+    // child class Square inherits parent class Geometry 
+    public class Square : Geometry
     {
+        // Unique property for Square
         public double Side { get; set; }
 
+        // Constructor with set values for Side and ShapeName
         public Square()
         {
-            Side = 5;
-            Shape = "Square";
+            Side = 8.535;
+            ShapeName = "Square";
         }
+        // Overrides method Area with the formula for calculating the area of a square. Returns a double.
         public override double Area()
         {
-            return Side * Side;
+            return Math.Pow(Side, 2);
         }
     }
 }
