@@ -10,6 +10,12 @@
             RadiusB = 4.9;
             ShapeName = "Ellipse";
         }
+        public Ellipse(double radiusA, double radiusB)
+        {
+            RadiusA = radiusA;
+            RadiusB = radiusB;
+            ShapeName = "Ellipse";
+        }
         public override double Area()
         {
             return RadiusA * RadiusB * Math.PI;

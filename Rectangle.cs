@@ -10,6 +10,12 @@
             SideB = 4;
             ShapeName = "Rectangle";
         }
+        public Rectangle(double sideA, double sideB)
+        {
+            SideA = sideA;
+            SideB = sideB;
+            ShapeName = "Rectangle";
+        }
         public override double Area()
         {
             return SideA * SideB;

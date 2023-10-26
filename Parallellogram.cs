@@ -10,6 +10,12 @@
             SideB = 3.1;
             ShapeName = "Parallellogram";
         }
+        public Parallellogram (double sideA, double sideB)
+        {
+            SideA = sideA;
+            SideB = sideB;
+            ShapeName = "Parallellogram";
+        }
         public override double Area()
         {
             return SideA * SideB;
